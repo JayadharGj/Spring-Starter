@@ -1,0 +1,32 @@
+GET http://localhost:8080/api/content
+###
+GET http://localhost:8080/api/content/1
+
+###
+POST http://localhost:8080/api/content
+Content-Type: application/json
+
+{
+    "id": 3,
+    "title": "hi macha",
+    "desc": "desc",
+    "status": "IDEA",
+    "contentType": "BLOG",
+    "dateCreated": "2024-01-14T13:19:29.564979",
+    "dateUpdated": null,
+    "url": ""
+}
+###
+PUT http://localhost:8080/api/content/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "testing Gj",
+  "desc": "working",
+  "status": "IDEA",
+  "contentType": "BLOG",
+  "dateCreated": "2024-01-14T13:19:29.564979",
+  "dateUpdated": null,
+  "url": "http://localhost:8080/api/content/1"
+}
